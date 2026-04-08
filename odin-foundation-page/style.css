@@ -69,6 +69,7 @@ body {
     border: 0;
     margin: 8px 8px 8px 0;
     padding: 4px;
+    border-radius: 4px;
 }
 
 .part2 {
@@ -76,30 +77,105 @@ body {
     flex-direction: column;
     margin-right: 10%;
     margin-left: 10%;
-    height: 230px;
+    height: 240px;
+    
+    align-items: center;
     .title {
         align-self: center;
     }
     .elements {
         display: flex;
-        justify-content: space-between;
-        flex-shrink: 1;
+        justify-content: space-around;
+        width: 100vh;
+        .items {
+            display: flex;
+            flex-direction: column;
+            
+        }
         .image {
-            border: 5px solid #3882F6;
-            width: 100px;
-            height: 100px;
+            border: 4px solid #3882F6;
+            width: 110px;
+            height: 110px;
             margin: 0;
             margin-bottom: 6px;
-            flex-shrink: 0;
+            border-radius: 10px;
         }
         p {
             margin: 0;
+            width: 110px;
         }
     }
 }
 
 
 
+
+
 .part3 {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    .content {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .quote {
+        font-size: 30px;
+        font-weight: 0;
+        margin: 0;
+    }
+    .signature {
+        align-self: flex-end;
+        font-weight: 900;
+        margin: 0;
+    }
+}
+
+.part4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .box {
+        background-color: #3882F6;
+        display: flex;align-self: center;
+        padding: 20px;
+        align-items: center;
+        border-radius: 6px;
+        .text {
+            padding: 10px;
+            .title {
+                margin: 0;
+                color: #F9FAF8;
+            }
+            .information {
+                margin: 0;
+                color: #F9FAF8;
+            }
+        }
+        button {
+            padding: 5px 20px 5px 20px;
+            border: 3px solid#F9FAF8;
+            background-color: #3882F6;
+            color: #F9FAF8;
+            margin-left: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+.footer {
+    justify-self: flex-end;
+    padding: 20px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    div {
+        color: #F9FAF8;
+    }
 }
